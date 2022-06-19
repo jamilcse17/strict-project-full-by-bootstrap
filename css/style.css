@@ -1,0 +1,360 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color:#f6f9f9;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.banner{
+
+background-image: url(../images/banner.png);
+
+background-position: center;
+
+background-repeat: none;
+
+background-size: cover;
+
+min-height: 90vh;
+
+text-align: center;
+}
+.banner h1{
+
+color: #ffff;
+
+text-transform: uppercase;
+
+font-size: 80px;
+}
+
+.banner span{
+  
+display: block;
+  
+height: 2px;
+  
+width: 100%;
+  
+background: #15a4fa;
+  
+margin: auto;
+  
+margin-bottom: 20px;
+}
+
+.banner p{
+  
+color: #fff;
+}
+.btn-custom{
+
+color: white;
+
+border: 1px solid #15a4fa;
+
+padding: 0;
+
+padding: 8px 22px;
+}
+
+.btn-custom:hover{
+  background-color: #15a4fa;
+  transition: .4s;
+  color: #fff;
+}
+.height{
+   min-height: 90vh;
+   position: relative;
+   align-items: center;
+}
+.btn-custom:focus{
+
+  box-shadow: none;
+}
+
+.icon{
+
+left:50%;
+bottom: 100px;
+position: absolute;
+transform: translate(-50%);
+animation: up-down 4s infinite;
+animation-duration:alternate;
+}
+.icon i{ 
+color: #fff;
+  font-size: 25px;
+}
+
+@keyframes up-down{
+  0%{
+    top:80%
+  }
+  100%{
+    top:85%
+
+  }
+  
+}
+.simple{
+  text-align: center;
+  background: #f6f9f9;
+  padding: 50px 0;
+}
+.simple h2{
+  
+color: #2d3950;
+  
+font-size: 35px;
+  
+text-transform: capitalize;
+}
+.simple p{
+  
+color: #99999;
+  
+color: #999999;
+  
+font-size: 14px;
+}
+
+.feature{
+
+text-align: center;
+
+padding: 50px 0;
+}
+.feature h3{
+
+font-size: 20px;
+
+color: #2d3950;
+}
+.feature p{
+
+color: #999;
+
+font-size: 14px;
+}
+.phone{
+
+height: 80px;
+
+width: 80px;
+
+background: #03a9f4;
+
+font-size: 35px;
+
+color: #fff;
+
+line-height: 80px;
+
+/* display: flex; */
+
+/* align-items: center; */
+
+margin: auto;
+
+margin-bottom: 20px;
+}
+.phone i{
+  
+}
+
+
+
+.showcase{
+  background-color: #f6f9f9;
+
+}
+
+.image{
+  position: relative;
+  margin-bottom: 30px;
+
+
+}
+
+.image::after{
+  content: " ";
+  position: absolute;
+   bottom: 0%;
+   left: 0%;
+   width: 100%;
+   height: 0%;
+  background-color: #169ff5;
+  opacity: .6;
+  transition: 0.4s all ease-in-out;
+
+}
+
+.image::before{
+  content: " ";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+   width: 100%;
+   height: 0%;
+  background-color: #169ff5;
+  opacity: .6;
+  transition: 0.4s all ease-in-out;
+
+}
+
+.image:hover::after{
+  height: 50%;
+}
+.image:hover::before{
+  height: 50%;
+}
+
+
+.icon-box{
+position: absolute;
+
+/* opacity 0 no execute */
+top: 50%;
+left: 50%;
+color: #fff;
+transform: translate(-50%, -50%);
+transition: .4s all ease-in-out;
+opacity: 0;
+}
+
+.icon-box i{
+border: 1px solid #ffff;
+padding: 10px;
+border-radius: 5px;
+}
+.image:hover .icon-box{
+  opacity: 1;
+
+  
+  
+}
+
+.contact_section{
+  background-image: url(../images/contact-us.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.contact_section::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#2d3950;
+  opacity: .7;
+  z-index: -1;
+}
+.contact_section form input{
+  background-color: transparent;
+
+}
+.contact_section form textarea{
+  background-color: transparent;
+
+  
+}
+
+
+.check-box
+{
+
+}
+
+.check{
+  
+display: flex;
+  
+margin: auto;
+}
+.check input{
+
+/* height: 56px; */
+}
+
+
+.check p{
+
+color: #fff;
+
+font-size: 12px;
+
+margin-left: 5px;
+}
+
+.send-button{
+
+}
+
+.contact_section form input[type="submit"]
+{
+   background-color:#15a4fa;
+   border: none;
+   padding: 3px 30px;
+   border-radius: 3px;
+   color: #fff;
+}
+ 
+
+.copyright{
+
+}
+.copyright p{
+  font-size: 16px;
+  
+}
+
+.social_icon{
+  
+width: 25%;
+}
+
+
+.social_icon ul{
+
+list-style: none;
+
+display: flex;
+
+justify-content: space-around;
+
+align-items: center;
+
+width: 90%;
+}
+.social_icon ul li{
+
+ height: 30px;
+
+  width: 30px;
+  line-height: 30px;
+
+  background: #15a4fa;
+
+  text-align: center;
+
+  color: #ffff;
+
+
+
+
+}
+.social_icon ul li i{
+  
+}
